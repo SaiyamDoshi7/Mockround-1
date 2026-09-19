@@ -1,0 +1,149 @@
+export const users = [
+  {
+    id: 1,
+    name: "John Employee",
+    email: "employee@company.com",
+    password: "123456",
+    role: "employee",
+    department_id: 1,
+    status: "active",
+    created_at: "2026-01-01"
+  },
+  {
+    id: 2,
+    name: "Sarah Manager",
+    email: "manager@company.com",
+    password: "123456",
+    role: "manager",
+    department_id: 1,
+    status: "active",
+    created_at: "2026-01-01"
+  },
+  {
+    id: 3,
+    name: "Mike Johnson",
+    email: "mike@company.com",
+    password: "123456",
+    role: "employee",
+    department_id: 2,
+    status: "active",
+    created_at: "2026-01-01"
+  },
+  {
+    id: 4,
+    name: "Priya Sharma",
+    email: "priya@company.com",
+    password: "123456",
+    role: "employee",
+    department_id: 3,
+    status: "active",
+    created_at: "2026-01-01"
+  }
+];
+
+export const departments = [
+  {
+    id: 1,
+    name: "Human Resources",
+    status: "active",
+    created_at: "2026-01-01"
+  },
+  {
+    id: 2,
+    name: "Information Technology",
+    status: "active",
+    created_at: "2026-01-01"
+  },
+  {
+    id: 3,
+    name: "Finance",
+    status: "active",
+    created_at: "2026-01-01"
+  }
+];
+
+export const leaveTypes = [
+  {
+    id: 1,
+    name: "Casual Leave",
+    code: "CL",
+    annual_limit: 7,
+    status: "active"
+  },
+  {
+    id: 2,
+    name: "Sick Leave",
+    code: "SL",
+    annual_limit: 5,
+    status: "active"
+  },
+  {
+    id: 3,
+    name: "Earned Leave",
+    code: "EL",
+    annual_limit: 10,
+    status: "active"
+  },
+  {
+    id: 4,
+    name: "Privilege Leave",
+    code: "PL",
+    annual_limit: 5,
+    status: "active"
+  }
+];
+
+export const leaveRequests = [
+  {
+    id: 1,
+    employee_id: 1,
+    leave_type_id: 1,
+    start_date: "2026-09-05",
+    end_date: "2026-09-06",
+    total_days: 2,
+    reason: "Personal work",
+    status: "Approved",
+    approved_by: 2,
+    created_at: "2026-09-01",
+    updated_at: "2026-09-02"
+  },
+  {
+    id: 2,
+    employee_id: 1,
+    leave_type_id: 2,
+    start_date: "2026-09-20",
+    end_date: "2026-09-20",
+    total_days: 1,
+    reason: "Medical appointment",
+    status: "Pending",
+    approved_by: null,
+    created_at: "2026-09-15",
+    updated_at: "2026-09-15"
+  },
+  {
+    id: 3,
+    employee_id: 3,
+    leave_type_id: 3,
+    start_date: "2026-08-10",
+    end_date: "2026-08-12",
+    total_days: 3,
+    reason: "Family function",
+    status: "Approved",
+    approved_by: 2,
+    created_at: "2026-08-01",
+    updated_at: "2026-08-02"
+  },
+  {
+    id: 4,
+    employee_id: 4,
+    leave_type_id: 4,
+    start_date: "2026-09-25",
+    end_date: "2026-09-27",
+    total_days: 3,
+    reason: "Vacation",
+    status: "Pending",
+    approved_by: null,
+    created_at: "2026-09-12",
+    updated_at: "2026-09-12"
+  }
+];
